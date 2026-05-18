@@ -62,15 +62,57 @@ Convert image to grayscale and apply Laplacian Operator using `cv2.Laplacian()`.
 Display all filtered images using a grid layout for comparison.
 
 ---
+## Program:
+</br>
 
-##  Developed By
+###  Developed By: Ashqar Ahamed S T
+### Register Number: 212224240018
 
-- **Name:** ____________________________  
-- **Register No:** ______________________  
+### 1. Smoothing Filters
 
----
+i) Using Averaging Filter
 
-##  Output
+```Python
+kernel = np.ones((5,5),np.float32)/25
+avg_fil_img = cv2.filter2D(img,-1,kernel
+```
+
+ii) Using Weighted Averaging Filter
+
+```Python
+kernel = np.array([[1,2,1],[2,4,2],[1,2,1]],np.float32)/16
+w_avg_fil_img = cv2.filter2D(img,-1,kernel)
+
+```
+
+iii) Using Gaussian Filter
+
+```Python
+gaussian_fil_img = cv2.GaussianBlur(img,(5,5),0)
+```
+
+iv)Using Median Filter
+
+```Python
+med_fil_img = cv2.medianBlur(img,5)
+```
+
+### 2. Sharpening Filters
+i) Using Laplacian Linear Kernal
+```Python
+
+kernel = np.array([[0,1,0],[1,-4,1],[0,1,0]])
+sharpening_fil_img = cv2.filter2D(img,-1,kernel)
+
+```
+ii) Using Laplacian Operator
+```Python
+
+laplacian_fil_img = cv2.Laplacian(img,cv2.CV_64F)
+
+```
+
+## OUTPUT:
 
 ### Smoothing Filters
 
@@ -83,6 +125,47 @@ Display all filtered images using a grid layout for comparison.
 
 - Laplacian kernel enhances edges and fine details  
 - Laplacian operator detects edges clearly in grayscale  
+
+
+### 1. Smoothing Filters
+</br>
+
+
+i) Using Averaging Filter
+</br>
+
+![alt text](../sm2.png)
+
+ii)Using Weighted Averaging Filter
+</br>
+
+![alt text](../sm3.png)
+
+iii)Using Gaussian Filter
+</br>
+
+![alt text](../sm4.png)
+
+iv) Using Median Filter
+</br>
+
+![alt text](../sm5.png)
+
+### 2. Sharpening Filters
+</br>
+
+i) Using Laplacian Kernal
+</br>
+
+![alt text](../sh1.png)
+
+ii) Using Laplacian Operator
+</br>
+
+![alt text](../sh2.png)
+
+---
+
 
 ---
 
