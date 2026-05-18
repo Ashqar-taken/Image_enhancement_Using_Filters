@@ -134,22 +134,22 @@ laplacian_fil_img = cv2.Laplacian(img,cv2.CV_64F)
 i) Using Averaging Filter
 </br>
 
-![alt text](../sm2.png)
+![alt text](sm2.png)
 
 ii)Using Weighted Averaging Filter
 </br>
 
-![alt text](../sm3.png)
+![alt text](sm3.png)
 
 iii)Using Gaussian Filter
 </br>
 
-![alt text](../sm4.png)
+![alt text](sm4.png)
 
 iv) Using Median Filter
 </br>
 
-![alt text](../sm5.png)
+![alt text](sm5.png)
 
 ### 2. Sharpening Filters
 </br>
@@ -157,12 +157,12 @@ iv) Using Median Filter
 i) Using Laplacian Kernal
 </br>
 
-![alt text](../sh1.png)
+![alt text](sh1.png)
 
 ii) Using Laplacian Operator
 </br>
 
-![alt text](../sh2.png)
+![alt text](sh2.png)
 
 ---
 
